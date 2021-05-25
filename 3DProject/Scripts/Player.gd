@@ -8,11 +8,11 @@ var vel = Vector3()
 func _process(delta):
 	var dir = Vector3()
 	
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().quit()
 	if Input.is_action_pressed("ui_left"):
-#		dir.x = -1
 		rotate_y(ROTATION * delta)
 	if Input.is_action_pressed("ui_right"):
-#		dir.x = 1
 		rotate_y(-ROTATION * delta)
 	if Input.is_action_pressed("ui_up"):
 		dir.z = -1
@@ -29,3 +29,5 @@ func _process(delta):
 		
 	
 	vel = move_and_slide(vel, Vector3(0,1,0))
+
+
