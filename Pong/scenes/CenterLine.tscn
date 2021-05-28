@@ -1,0 +1,109 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="QuadMesh" id=1]
+
+[node name="CenterLine" type="StaticBody2D"]
+
+[node name="Dot" type="MeshInstance2D" parent="."]
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot2" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 30 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot3" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 60 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot4" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 90 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot5" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 120 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot6" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 150 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot7" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 180 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot8" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 210 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot9" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 240 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot10" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 270 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot11" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 300 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot12" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 330 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot13" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 360 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot14" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 390 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot15" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 420 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot16" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 450 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot17" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 480 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot18" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 510 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot19" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 540 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot20" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 570 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )
+
+[node name="Dot21" type="MeshInstance2D" parent="."]
+position = Vector2( 0, 600 )
+scale = Vector2( 5, 20 )
+mesh = SubResource( 1 )

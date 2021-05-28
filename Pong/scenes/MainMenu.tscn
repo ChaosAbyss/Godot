@@ -1,0 +1,110 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://fonts/ChiKareGo80.tres" type="DynamicFont" id=2]
+[ext_resource path="res://fonts/ChiKareGo50.tres" type="DynamicFont" id=3]
+
+[node name="MainMenu" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.305882, 0.678431, 0.960784, 1 )
+
+[node name="Center" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Center"]
+margin_left = 349.0
+margin_top = 197.0
+margin_right = 674.0
+margin_bottom = 402.0
+custom_constants/separation = 30
+
+[node name="TitleContainer" type="CenterContainer" parent="Center/VBoxContainer"]
+margin_right = 325.0
+margin_bottom = 75.0
+
+[node name="Title" type="Label" parent="Center/VBoxContainer/TitleContainer"]
+margin_right = 325.0
+margin_bottom = 75.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 3
+text = "Ping Pong"
+
+[node name="OptionContainer" type="CenterContainer" parent="Center/VBoxContainer"]
+margin_top = 105.0
+margin_right = 325.0
+margin_bottom = 205.0
+
+[node name="Options" type="VBoxContainer" parent="Center/VBoxContainer/OptionContainer"]
+margin_left = 95.0
+margin_right = 229.0
+margin_bottom = 100.0
+
+[node name="Option1" type="CenterContainer" parent="Center/VBoxContainer/OptionContainer/Options"]
+margin_right = 134.0
+margin_bottom = 48.0
+
+[node name="Line" type="HBoxContainer" parent="Center/VBoxContainer/OptionContainer/Options/Option1"]
+margin_right = 134.0
+margin_bottom = 48.0
+
+[node name="Selector" type="Label" parent="Center/VBoxContainer/OptionContainer/Options/Option1/Line"]
+margin_right = 23.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 23, 0 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = ">"
+
+[node name="OptionName" type="Label" parent="Center/VBoxContainer/OptionContainer/Options/Option1/Line"]
+margin_left = 27.0
+margin_right = 134.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = "Start"
+
+[node name="Option2" type="CenterContainer" parent="Center/VBoxContainer/OptionContainer/Options"]
+margin_top = 52.0
+margin_right = 134.0
+margin_bottom = 100.0
+
+[node name="Line" type="HBoxContainer" parent="Center/VBoxContainer/OptionContainer/Options/Option2"]
+margin_right = 134.0
+margin_bottom = 48.0
+
+[node name="Selector" type="Label" parent="Center/VBoxContainer/OptionContainer/Options/Option2/Line"]
+margin_right = 23.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 23, 0 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = ">"
+
+[node name="OptionName" type="Label" parent="Center/VBoxContainer/OptionContainer/Options/Option2/Line"]
+margin_left = 27.0
+margin_right = 134.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 107, 0 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = "Exit"
