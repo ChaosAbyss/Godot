@@ -10,3 +10,8 @@ Some things I've learnt or discovered:
 * Basics of Scene structure of a project
 * Basic movements
 * Different types of cameras (First-Person, Fixed, Smooth)
+
+Some previews of the game:
+
+<img src="Previews/firstPreview.png" width="500">
+<img src="Previews/secondPreview.png" width="500">
