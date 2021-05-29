@@ -29,3 +29,4 @@ A project which includes GUI, sound effects and pretty-looking font.
 
 <img src="Pong/previews/MainMenyPreview.png" width="500">
 <img src="Pong/previews/GameplayPreview.png" width="500">
+<img src="Pong/previews/WinScreen.png" width="500">
