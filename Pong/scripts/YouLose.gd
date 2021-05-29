@@ -1,9 +1,9 @@
-extends MarginContainer
+extends Control
 
 const pong_scene = "res://scenes/Root.tscn"
 
-onready var selector_one = $Center/VBoxContainer/OptionContainer/Options/Option1/Line/Selector
-onready var selector_two = $Center/VBoxContainer/OptionContainer/Options/Option2/Line/Selector
+onready var selector_one = $Center/VBoxContainer/OptionsContainer/Options/Option1/Line/Selector
+onready var selector_two = $Center/VBoxContainer/OptionsContainer/Options/Option2/Line/Selector
 
 var current_selection = 0
 

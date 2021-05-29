@@ -1,0 +1,116 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/ChiKareGo80.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/ChiKareGo50.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scripts/YouWin.gd" type="Script" id=3]
+
+[node name="YouWin" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.137255, 1, 0, 0.666667 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Center" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Center"]
+margin_left = 369.0
+margin_top = 197.0
+margin_right = 654.0
+margin_bottom = 402.0
+custom_constants/separation = 30
+
+[node name="TitleContainer" type="CenterContainer" parent="Center/VBoxContainer"]
+margin_right = 285.0
+margin_bottom = 75.0
+
+[node name="Title" type="Label" parent="Center/VBoxContainer/TitleContainer"]
+margin_right = 285.0
+margin_bottom = 75.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 3
+text = "You win!"
+
+[node name="OptionsContainer" type="CenterContainer" parent="Center/VBoxContainer"]
+margin_top = 105.0
+margin_right = 285.0
+margin_bottom = 205.0
+
+[node name="Options" type="VBoxContainer" parent="Center/VBoxContainer/OptionsContainer"]
+margin_left = 50.0
+margin_right = 234.0
+margin_bottom = 100.0
+
+[node name="Option1" type="CenterContainer" parent="Center/VBoxContainer/OptionsContainer/Options"]
+margin_right = 184.0
+margin_bottom = 48.0
+
+[node name="Line" type="HBoxContainer" parent="Center/VBoxContainer/OptionsContainer/Options/Option1"]
+margin_right = 184.0
+margin_bottom = 48.0
+
+[node name="Selector" type="Label" parent="Center/VBoxContainer/OptionsContainer/Options/Option1/Line"]
+margin_right = 23.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 23, 0 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = ">"
+
+[node name="OptionName" type="Label" parent="Center/VBoxContainer/OptionsContainer/Options/Option1/Line"]
+margin_left = 27.0
+margin_right = 184.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = "Restart"
+
+[node name="Option2" type="CenterContainer" parent="Center/VBoxContainer/OptionsContainer/Options"]
+margin_top = 52.0
+margin_right = 184.0
+margin_bottom = 100.0
+
+[node name="Line" type="HBoxContainer" parent="Center/VBoxContainer/OptionsContainer/Options/Option2"]
+margin_right = 184.0
+margin_bottom = 48.0
+
+[node name="Selector" type="Label" parent="Center/VBoxContainer/OptionsContainer/Options/Option2/Line"]
+margin_right = 23.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 23, 0 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = ">"
+
+[node name="OptionName" type="Label" parent="Center/VBoxContainer/OptionsContainer/Options/Option2/Line"]
+margin_left = 27.0
+margin_right = 184.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 157, 0 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+text = "Exit"

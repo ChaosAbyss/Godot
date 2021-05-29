@@ -20,6 +20,10 @@ run/main_scene="res://scenes/MainMenu.tscn"
 boot_splash/bg_color=Color( 0.2, 0.329412, 0.72549, 1 )
 config/icon="res://sprites/icon.png"
 
+[autoload]
+
+SceneChanger="*res://scenes/SceneChanger.tscn"
+
 [display]
 
 window/size/test_width=960
