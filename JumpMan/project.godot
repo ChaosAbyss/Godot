@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="JumpMan"
-run/main_scene="res://Scenes/Root.tscn"
+run/main_scene="res://scenes/Root.tscn"
 config/icon="res://Images/icon.png"
 
 [input]

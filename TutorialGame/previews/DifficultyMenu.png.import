@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-b9450fb2459f5b277908511db3d050dd.stex"
+path="res://.import/DifficultyMenu.png-66623c9935820c3a97200b3f61a4acca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/icon.png"
-dest_files=[ "res://.import/icon.png-b9450fb2459f5b277908511db3d050dd.stex" ]
+source_file="res://previews/DifficultyMenu.png"
+dest_files=[ "res://.import/DifficultyMenu.png-66623c9935820c3a97200b3f61a4acca.stex" ]
 
 [params]
 

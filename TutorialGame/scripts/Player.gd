@@ -2,8 +2,8 @@ extends Area2D
 
 signal hit
 
-export var speed = 400.0
 var screen_size = Vector2.ZERO
+var speed
 
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -48,4 +48,12 @@ func _on_Player_body_entered(body):
 	hide()
 	$Collision.set_deferred("disabled", true)
 	emit_signal("hit")
-	
+
+func _on_StartScreen_easy_game():
+	speed = 250.0
+
+func _on_StartScreen_medium_game():
+	speed = 300.0
+
+func _on_StartScreen_hard_game():
+	speed = 400.0
